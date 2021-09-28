@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search locations</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
+  </head>
+
+  <body>
+    <h2>Search locations</h2>
+    <p>
+      <b>Options</b>
+      <br />
+      <input id="lat" placeholder="Latitude, default 51.505" type="number" />
+      <input id="lng" placeholder="Longitude, default -0.09" type="number" />
+    </p>
+    <p>
+      <button id="btn-go" onclick="go()">Go</button>
+      <br />
+      <button id="btn-def" onclick="def()">Default</button>
+    </p>
+    <div id="map-div"></div>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>

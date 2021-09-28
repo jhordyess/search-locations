@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(200, 214, 234);
+}
+body,
+input,
+button {
+  font-size: 12pt;
+  font-family: sans-serif;
+}
+input {
+  border: 2px solid black;
+  border-radius: 5px;
+  line-height: 22px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#btn-def,
+#btn-go {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+#btn-def {
+  margin-top: 10px;
+}
+#lat,
+#lng {
+  width: 48%;
+  box-sizing: border-box;
+}
+#lat {
+  float: left;
+}
+#lng {
+  float: right;
+}
+#map-div {
+  border: 2px solid black;
+  height: 50vh;
+}
