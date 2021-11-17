@@ -20,17 +20,42 @@
 
   <body>
     <h2>Search locations</h2>
-    <p>
-      <b>Options</b>
-      <br />
-      <input id="lat" placeholder="Latitude, default 51.505" type="number" />
-      <input id="lng" placeholder="Longitude, default -0.09" type="number" />
-    </p>
-    <p>
+    <div>
+      <b>Coordinates</b>
+      <div class="inputs_container">
+        <input id="lat" placeholder="Latitude, default 51.505" type="number" />
+        <input id="lng" placeholder="Longitude, default -0.09" type="number" />
+      </div>
+    </div>
+    <div>
+      <b>Radius of the circle</b>
+      <div class="radius_container">
+        <input
+          id="ran"
+          type="range"
+          min="1"
+          max="500"
+          value="1"
+          oninput="onRange(event)"
+        />
+        <div>
+          <input
+            id="ran_value"
+            type="number"
+            min="1"
+            max="500"
+            value="1"
+            oninput="onRangeInput(event)"
+          />
+          meters
+        </div>
+      </div>
+    </div>
+    <div class="buttons_container">
+      <button id="btn-local" onclick="try_location()">Use location</button>
       <button id="btn-go" onclick="go()">Go</button>
-      <br />
       <button id="btn-def" onclick="def()">Default</button>
-    </p>
+    </div>
     <div id="map-div"></div>
     <script type="text/javascript" src="./index.js"></script>
   </body>

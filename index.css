@@ -7,18 +7,17 @@ button {
   font-size: 12pt;
   font-family: sans-serif;
 }
-input {
-  border: 2px solid black;
-  border-radius: 5px;
-  line-height: 22px;
-  padding: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+/**/
+div.buttons_container {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0px;
+  gap: 8px;
 }
-#btn-def,
-#btn-go {
-  width: 100%;
-  box-sizing: border-box;
+
+button#btn-def,
+button#btn-go,
+button#btn-local {
   background-color: black;
   border: 0;
   color: white;
@@ -27,20 +26,48 @@ input {
   padding-bottom: 7px;
   cursor: pointer;
 }
-#btn-def {
+/**/
+input {
+  border: 2px solid black;
+  border-radius: 5px;
+  line-height: 22px;
+  padding: 5px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
-#lat,
-#lng {
-  width: 48%;
-  box-sizing: border-box;
+
+div.inputs_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 }
-#lat {
-  float: left;
+/**/
+div.radius_container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  height: 22px;
+  padding: 10px;
+  margin: 10px 0px;
 }
-#lng {
-  float: right;
+
+input#ran {
+  width: 80%;
 }
+
+input#ran_value {
+  width: 64px;
+  border: 1px solid white;
+  outline: 0px;
+}
+
+input#ran_value:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/**/
 #map-div {
   border: 2px solid black;
   height: 50vh;
