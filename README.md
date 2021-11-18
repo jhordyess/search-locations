@@ -12,6 +12,8 @@ A circle drawed on the map, use the scrollbar to change radius. Also the input t
 
 See live: [https://jhordyess.github.io/search-locations/](https://jhordyess.github.io/search-locations/)
 
+Pending: To use SI units in the radius input, may will come with ReactJS. 🤓
+
 ---
 
 @2021 Jhordyess
