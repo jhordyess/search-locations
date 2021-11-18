@@ -36,6 +36,12 @@ input {
   margin-bottom: 10px;
 }
 
+input#lat,
+input#lng {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 div.inputs_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -49,17 +55,15 @@ div.radius_container {
   border: 2px solid black;
   border-radius: 5px;
   background-color: white;
-  height: 22px;
-  padding: 10px;
+  padding: 0px 10px;
   margin: 10px 0px;
 }
 
 input#ran {
-  width: 80%;
+  flex-grow: 1;
 }
 
 input#ran_value {
-  width: 64px;
   border: 1px solid white;
   outline: 0px;
 }
