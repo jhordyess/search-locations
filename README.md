@@ -6,14 +6,14 @@ Using the open-source JavaScript library [Leaflet](https://leafletjs.com/), and 
 
 This project is just some easy implementation, using the coordinates to search on the map.
 
-Share your location to draw in the map.(Optional)
+Share your location to locate yourself on the map.(Optional)
 
-A circle drawed on the map, use the scrollbar to change radius. Also the input to manual radius entry.
+A circle is drawn on the map, use the scrollbar or text input field to change the radius.
 
-See live: [https://jhordyess.github.io/search-locations/](https://jhordyess.github.io/search-locations/)
+See online: [https://jhordyess.github.io/search-locations/](https://jhordyess.github.io/search-locations/)
 
-Pending: To use SI units in the radius input, may will come with ReactJS. 🤓
+To do: To use SI units in the radius input field, but may come with ReactJS. 🤓
 
 ---
 
-@2021 Jhordyess
+@2022 Jhordyess
