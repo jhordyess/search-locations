@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="theme-color" content="#4fc06e" />
     <title>Search locations</title>
     <link
       rel="stylesheet"
@@ -19,46 +21,59 @@
   </head>
 
   <body>
-    <h2>Search locations</h2>
-    <div>
-      <b>Coordinates</b>
-      <div class="inputs_container">
-        <input id="lat" placeholder="Latitude, default 51.505" type="number" />
-        <input id="lng" placeholder="Longitude, default -0.09" type="number" />
-      </div>
-    </div>
-    <div>
-      <b>Radius of the circle</b>
-      <div class="radius_container">
-        <input
-          id="ran"
-          type="range"
-          min="1"
-          max="500"
-          value="1"
-          oninput="onRange(event)"
-        />
-        <div>
+    <main>
+      <h2>Search locations</h2>
+      <div>
+        <b>Coordinates</b>
+        <div class="inputs_container">
           <input
-            id="ran_value"
+            id="lat"
+            placeholder="Latitude, default 51.505"
             type="number"
-            min="1"
-            max="500"
-            value="1"
-            oninput="onRangeInput(event)"
           />
-          meters
+          <input
+            id="lng"
+            placeholder="Longitude, default -0.09"
+            type="number"
+          />
         </div>
       </div>
-    </div>
-    <div class="buttons_container">
-      <button id="btn-local" onclick="try_location()">Use location</button>
-      <button id="btn-go" onclick="go()">Go</button>
-      <button id="btn-def" onclick="def()">Default</button>
-    </div>
-    <div id="map-div"></div>
+      <div>
+        <b>Radius of the circle</b>
+        <div class="radius_container">
+          <input
+            id="ran"
+            type="range"
+            min="0"
+            max="5000"
+            value="0"
+            step="100"
+            oninput="onRange(event)"
+          />
+          <div>
+            <input
+              id="ran_value"
+              type="number"
+              min="0"
+              max="5000"
+              value="0"
+              oninput="onRangeInput(event)"
+            />
+            meters
+          </div>
+        </div>
+      </div>
+      <div class="buttons_container">
+        <button id="btn-local" onclick="try_location()">Use my location</button>
+        <button id="btn-go" onclick="go()">Go</button>
+        <button id="btn-def" onclick="def()">
+          Go with default coordinates
+        </button>
+      </div>
+      <div id="map-container"></div>
+    </main>
     <footer>
-      Made with 💪 by 
+      Made with 💪 by
       <a href="https://www.jhordyess.com" target="_blank" rel="noreferrer">
         Jhordyess
       </a>

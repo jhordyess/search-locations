@@ -12,8 +12,15 @@ A circle is drawn on the map, use the scrollbar or text input field to change th
 
 See online: [https://jhordyess.github.io/search-locations/](https://jhordyess.github.io/search-locations/)
 
-To do: To use SI units in the radius input field, but may come with ReactJS. 🤓
+## TODO
+
+- Use SI units in the radius input field.
+- Use ReactJS. 🤓
+
+## License
+
+© 2022 [Jhordyess](https://github.com/jhordyess). Under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
 ---
 
-@2022 Jhordyess
+Made with 💪 by [Jhordyess](https://www.jhordyess.com/)

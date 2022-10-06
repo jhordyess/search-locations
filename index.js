@@ -2,7 +2,7 @@ const lat = 51.505;
 const lng = -0.09;
 const zoom = 13;
 // Define the map
-let theMap = L.map("map-div").setView([lat, lng], zoom);
+let theMap = L.map("map-container").setView([lat, lng], zoom);
 // Define and add the marker
 let marker = L.marker([lat, lng])
   .bindPopup("A simple <b>popup</b>.")

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
+
 body {
   background-color: rgb(200, 214, 234);
 }
@@ -5,7 +7,14 @@ body,
 input,
 button {
   font-size: 12pt;
-  font-family: sans-serif;
+  font-family: "Archivo", sans-serif;
+}
+main h2 {
+  text-align: center;
+}
+footer {
+  margin: 12px auto;
+  text-align: center;
 }
 /**/
 div.buttons_container {
@@ -72,7 +81,7 @@ input#ran_value:focus {
   background-color: rgba(0, 0, 0, 0.05);
 }
 /**/
-#map-div {
+div#map-container {
   border: 2px solid black;
   height: 50vh;
 }
