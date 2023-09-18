@@ -1,0 +1,13 @@
+{
+  "name": "search-locations",
+  "image": "jhordyess/node:18",
+  "customizations": {
+    "vscode": {
+      "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      }
+    }
+  },
+  "postCreateCommand": "sudo npm i npm -g && yarn"
+}

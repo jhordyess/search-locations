@@ -1,0 +1,32 @@
+{
+  "name": "search-locations",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Search some locations on the map, using latitude and longitude",
+  "author": "Jhordy Gavinchu <dev@jhordyess.com>",
+  "license": "MIT",
+  "keywords": [
+    "vite",
+    "leaflet",
+    "openstreetmap",
+    "search",
+    "locations"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js .",
+    "format": "prettier --write .",
+    "predeploy": "yarn lint && yarn build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "gh-pages": "^6.0.0",
+    "leaflet": "^1.9.4",
+    "prettier": "^3.0.3",
+    "vite": "^4.4.5"
+  }
+}
