@@ -20,6 +20,15 @@ footer {
   text-align: center;
 }
 
+footer a {
+  color: #81704f;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 div.buttons_container {
   display: flex;
   flex-direction: column;
