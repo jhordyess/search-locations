@@ -36,6 +36,10 @@ div.buttons_container {
   gap: 8px;
 }
 
+button#btn-local span {
+  font-size: 10pt;
+}
+
 button#btn-def,
 button#btn-go,
 button#btn-local {
@@ -43,8 +47,8 @@ button#btn-local {
   border: 0;
   color: white;
   border-radius: 5px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   cursor: pointer;
 }
 
@@ -87,6 +91,8 @@ input#ran {
 input#ran_value {
   border: 1px solid white;
   outline: 0px;
+  min-width: 50px;
+  max-width: 100px;
 }
 
 input#ran_value:focus {
@@ -96,4 +102,11 @@ input#ran_value:focus {
 div#map-container {
   border: 2px solid black;
   height: 50vh;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 768px;
+    margin: 0px auto;
+  }
 }
