@@ -1,5 +1,8 @@
 import './style.css'
 import 'leaflet/dist/leaflet.css'
+import markerIcon from 'leaflet/dist/images/marker-icon.png'
+import markerShadow from 'leaflet/dist/images/marker-shadow.png'
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png'
 import L from 'leaflet'
 
 // Define the initial map coordinates and zoom level
@@ -14,6 +17,14 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   maxZoom: 18
 }).addTo(map)
+
+// Re-define the default marker icon
+delete L.Icon.Default.prototype._getIconUrl
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow
+})
 
 // Define and add the marker
 const marker = L.marker([initialLat, initialLng]).bindPopup('A simple <b>popup</b>.').addTo(map)
