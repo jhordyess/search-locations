@@ -81,11 +81,6 @@ yarn dev
 
 6. Open the browser at <http://localhost:5173/search-locations>
 
-## To-Do
-
-- Use SI units in the radius input field.
-- Use ReactJS. 🤓
-
 ## License
 
 © 2021 [Jhordyess](https://github.com/jhordyess). Under the [MIT](https://choosealicense.com/licenses/mit/) license. See the [LICENSE](./LICENSE) file for more details.

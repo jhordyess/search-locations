@@ -52,7 +52,8 @@ button#btn-local {
   cursor: pointer;
 }
 
-input {
+input,
+select {
   border: 2px solid black;
   border-radius: 5px;
   line-height: 22px;
@@ -88,7 +89,8 @@ input#ran {
   flex-grow: 1;
 }
 
-input#ran_value {
+input#ran_value,
+select#ran_unit {
   border: 1px solid white;
   outline: 0px;
   min-width: 50px;
