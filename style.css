@@ -11,7 +11,12 @@ button {
   font-family: 'Archivo', sans-serif;
 }
 
+main {
+  padding: 24px;
+}
+
 main h2 {
+  margin-top: 0;
   text-align: center;
 }
 
@@ -76,6 +81,7 @@ div.inputs_container {
 
 div.radius_container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 8px;
   border: 2px solid black;
@@ -87,6 +93,7 @@ div.radius_container {
 
 input#ran {
   flex-grow: 1;
+  width: 100%;
 }
 
 input#ran_value,
@@ -110,5 +117,11 @@ div#map-container {
   body {
     max-width: 768px;
     margin: 0px auto;
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    padding: 10px
   }
 }
