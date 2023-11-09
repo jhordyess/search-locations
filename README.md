@@ -23,6 +23,10 @@ Simply adjust the circle on the map's radius using the scrollbar or text input f
 
 You can see the demo here: <https://jhordyess.github.io/search-locations>
 
+### Screenshot
+
+![Home](https://res.cloudinary.com/jhordyess/image/upload/v1699547056/search-locations/home.png)
+
 ## How to use
 
 1. Clone the repository.
